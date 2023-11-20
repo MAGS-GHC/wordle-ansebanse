@@ -11,7 +11,7 @@ body {
 
 #container {
   display: flex;
-  background-color: rgb(255, 130, 167);
+  background-color: rgb(59, 0, 0);
   height: 100%;
   align-items: center;
   flex-direction: column;
@@ -26,12 +26,12 @@ body {
 }
 
 header {
-    border-bottom: 3px solid rgb(255, 10, 194);
-    margin-bottom: 40px;
+  border-bottom: 3px solid rgb(255, 10, 194);
+  margin-bottom: 40px;
 }
 
 .title {
-  color: rgb(255, 10, 194);
+  color: rgb(255, 255, 255);
   font-size: 40px;
   font-weight: bold;
   margin: 7px 0 7px 0;
@@ -48,43 +48,44 @@ header {
 }
 
 #board {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: rgb(235, 108, 188);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(235, 108, 188);
 }
 
 .square {
-    border: 10px rgb(221, 130, 174);
-    min-width: 60px;
-    min-height: 60px;
-    background-color: rgb(245, 170, 235);
+  border: 10px rgb(221, 130, 174);
+  min-width: 60px;
+  min-height: 60px;
+  background-color: rgb(245, 170, 235);
 }
 
 #keyboardcontainer {
   height: 200px;
+  padding-top: 5%;
 }
 
 .keyboardrow {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto 8px;
-    touch-action: manipulation;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 8px;
+  touch-action: manipulation;
 }
 
 button {
-    font-family: inherit;
-    font-weight: bold;
-    border: 0;
-    padding: 0;
-    height: 58px;
-    width: 60px;
-    cursor: pointer;
-    flex-grow: 1;
-    background-color: palevioletred;
+  font-family: inherit;
+  font-weight: bold;
+  border: 0;
+  padding: 0;
+  height: 58px;
+  width: 60px;
+  cursor: pointer;
+  flex-grow: 1;
+  background-color: palevioletred;
 }
 
 button:hover {
