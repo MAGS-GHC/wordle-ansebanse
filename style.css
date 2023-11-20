@@ -1,19 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
-    display: flex;
-    background-color: rgb(255, 130, 167);
-    height: 100%;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  background-color: rgb(255, 130, 167);
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
 }
 
 #game {
@@ -26,23 +27,24 @@ html, body {
 
 header {
     border-bottom: 3px solid rgb(255, 10, 194);
+    margin-bottom: 40px;
 }
 
 .title {
-    color: rgb(255, 10, 194);
-    font-size: 40px;
-    font-weight: bold;
-    margin: 7px 0 7px 0;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 10, 194);
+  font-size: 40px;
+  font-weight: bold;
+  margin: 7px 0 7px 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #boardcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 #board {
@@ -51,24 +53,21 @@ header {
     grid-gap: 5px;
     padding: 10px;
     box-sizing: border-box;
+    background-color: rgb(235, 108, 188);
 }
 
 .square {
-    border: 3px solid rgb(239, 63, 148);
+    border: 10px rgb(221, 130, 174);
     min-width: 60px;
     min-height: 60px;
-    font-size: 55px;
-    font-weight: bold;
-    color: rgb(104, 234, 39);
-    text-transform: uppercase;
-    text-align: center;
+    background-color: rgb(245, 170, 235);
 }
 
 #keyboardcontainer {
-   height: 200px;
+  height: 200px;
 }
 
-.keyboard-row {
+.keyboardrow {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -76,30 +75,26 @@ header {
     touch-action: manipulation;
 }
 
-.keyboard-row button {
+button {
     font-family: inherit;
     font-weight: bold;
     border: 0;
     padding: 0;
     height: 58px;
-    flex-grow: 1;
+    width: 60px;
     cursor: pointer;
-    background-color: rgb(234, 24, 94);
-    color: rgb(0, 0, 0);
-    margin-right: 6px;
     flex-grow: 1;
-    border-radius: 4px;
-    user-select: none;
+    background-color: palevioletred;
 }
 
 button:hover {
-    background-color: rgb(255, 42, 148);
+    background-color: pink;
 }
 
-.keyboard-row button.wide-button {
-    flex-grow: 1.5;
+.wide-button {
+    width: 100px;
 }
 
 .spacer-half {
-    flex-grow: 0.5;
+    width: 30px;
 }
