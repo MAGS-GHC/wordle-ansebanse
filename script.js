@@ -14,4 +14,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//hey Anna
+//anna og ell
