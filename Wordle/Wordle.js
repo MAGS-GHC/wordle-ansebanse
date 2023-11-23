@@ -45,7 +45,7 @@ function startup() {
     }
 
 
-    // Listen for Key Press
+    // Now we want to add letters to our board based on what input we do through the keyboard. we
     document.addEventListener("keyup", (e) => {
         if (gameOver) return; 
 
@@ -59,9 +59,9 @@ function startup() {
                 }
             }
         }
-        
+
         else if (e.code == "Backspace") {
-            if (0 < letterplace && letterplace <= lengthofword) {
+        if (0 < letterplace && letterplace <= lengthofword) {
                 letterplace -=1;
             }
             let currSquare = document.getElementById(currGuess.toString() + '-' + letterplace.toString());
@@ -82,6 +82,7 @@ function startup() {
 
     })
 }
+
 
 function update() {
     
