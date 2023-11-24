@@ -45,11 +45,10 @@ function startup() {
     }
 
 
-    // Now we want to add letters to our board based on what input we do through the keyboard. we
+    // Now we want to add letters to our board based on what input we do through the keyboard. We use keyup so you have 
     document.addEventListener("keyup", (e) => {
-        if (gameOver) return; 
+        if (gameOver) return; //make the listen for any presses, and make the game stop once you have reached gameover
 
-        // alert(e.code);
        if ("KeyA" <= e.code && e.code <= "KeyZ") {
             if (letterplace < lengthofword) {
                 let currSquare = document.getElementById(currGuess.toString() + '-' + letterplace.toString());
