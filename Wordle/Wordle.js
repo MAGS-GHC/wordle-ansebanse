@@ -88,7 +88,6 @@ function update() {
     let guess = "";
     document.getElementById("answer").innerText = "";
 
-    //string up the guesses into the word
     for (let c = 0; c < lengthofword; c++) {
         let currSquare = document.getElementById(currGuess.toString() + '-' + c.toString());
         let letter = currSquare.innerText;
